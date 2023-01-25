@@ -7,6 +7,10 @@
 		<title>lucky you studios</title>
 	</head>
 
+	<style>
+     
+
+	</style>
 
 	<body>
 	<row style="display: flex; padding: 3%;">
@@ -36,14 +40,38 @@
 
 		<column style="flex:50%" style="padding: 3%; 
 		font-family: 'Times New Roman'; font-weight: 500; 
-		font-size: 30px; height: 500px; overflow: auto;">
-		<img src="imgs/1.jpg" width="100%;">
+		font-size: 30px; height: 500px; position: relative;">
+		
+			<img src="imgs/1.jpg" width="100%;">
+
+			<img src="imgs/2.jpg", id="two_seconds" style="display: none; position: absolute;  
+				top: 10px;
+			    right: 5px;
+			    width: 20%;">
+
+			<img src="imgs/3.jpg", id="four_seconds" style="display: none; position: absolute;  
+				top: 30%;
+			    right: 35%;
+			    width: 20%;">
 
 		</column>
 
 	
 	</row>
-	
+	<!--  position: absolute; --> 
+	 <script>
+     setTimeout(function(){
+     	  const demoId = document.querySelector('#two_seconds');
+     	  demoId.style.display='inline'
+         }, 2000)
+
+     setTimeout(function(){
+     	  const demoId = document.querySelector('#four_seconds');
+     	  demoId.style.display='inline'
+         }, 4000)
+
+	 </script>
+
 	</body>
 
 </html>
