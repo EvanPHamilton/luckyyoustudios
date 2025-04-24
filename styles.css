@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/NaNHoloMono-Black/woff/NaNHoloMono-Black.woff2') format('woff2'),
+         url('/fonts/NaNHoloMono-Black/ttf.NaNHoloMono-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
