@@ -1,113 +1,64 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="css/fonts/helvetica_neue/stylesheet.css">
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky You Studios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section with Logo -->
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png">
+        </div>
+    </header>
+
+    <div class="container" style="padding-left: 150px; padding-right: 150px;">
+        <!-- Left Div: Business Description -->
+        <div class="left">
+            <h2 style="margin: 0px;">Lucky You Studios is a creative culinary studio and event production agency</h2>
+            <p> We curate one of a kind dining experiences to share</p>
+            <p>Based in Berlin, we take on projects across Europe and the world.</p>
+        </div>
+
+        <!-- Right Div: Image Carousel -->
+        <div class="right">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="imgs/7-2.jpg" class="carousel-image active">
+                    <img src="imgs/8-2.jpg" class="carousel-image">
+                    <img src="imgs/9-2.jpg" class="carousel-image">
+                    <img src="imgs/10-2.jpg" class="carousel-image">
+                    <img src="imgs/11-2.jpg" class="carousel-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-left: 150px; padding-right: 150px;">
+        <!-- Left Div: Image Carousel  -->
+        <div class="left">
+            <img src="imgs/team.jpg" style="width: 100%;
+    height: auto;">
+        </div>
+
+        <!-- Right Div: About us Description -->
+        <div class="right" style="text-align: left;">
+            <h2 style="margin: 0px;">Lucky You has always been about our community</h2>
+            <p>Started in 2019 by Evan Hamilton, Chris Paxton and Ruhi Amin as a supper club in a tiny Neukölln apartment, our studio has expanded to include a wide range of chefs, producers, artists and designers. We draw upon our broad network of collaborators to create one of a kind dining experiences.</p>
+
+            <br>
+
+            <p>Our past clients proudly include Sezane, Yun Eyewear, Bar Sway, Google Pixel, Schering Stiftung, On Running, Clarks, Gant, Resident Advisor, The Berlin Club Commission, Highsnobiety and many more. </p>
+
+            <br>
+            <p> 
+            Interested in working together and joining our community? <a href="mailto:hello@luckyyoustudios.com">Email us</a> anytime. 
+        </div>
+    </div>
 
 
-	<head>
-		<title>lucky you studios</title>
-	</head>
-        <link rel="stylesheet" href="styles.css">
-	<style>
-     
-
-	</style>
-
-	<body>
-	<row style="display: flex; padding: 3%;">
-		<column style="flex:50%" style="padding: 3%; 
-		font-weight: 500; 
-		font-size: 40px; height: 500px; overflow: auto;">
-		<p style="width: 80%; font-weight: 500; 
-		font-size: 40px; margin: 0;">
-		Lucky You is an artistic collective crafting artful eating experiences to share. Through interactive pop-up meals, catered events and edible installations, we explore collective joy and big feelings in small bites.
-		</p>
-		<br>
-		<br>
-		<p style="width: 80%; font: 'Mono-Medium'; font-weight: 500; 
-		font-size: 40px; margin: 0;">
-		More to come soon...
-		<br>
-		<br>
-		<p>
-		<p style="width: 80%; font-weight: 500; 
-		font-size: 20px; margin: 0;">
-		Instagram: <a href="https://www.instagram.com/luckyyoustudios/">@luckyyoustudios</a>
-		<br>
-		Email: <a href="mailto: luckyyoustudiosberlin@gmail.com">luckyyoustudios@gmail.com</a>
-		</p>
-
-		</column>
-
-		<column style="flex:50%" style="padding: 3%; font-weight: 500; 
-		font-size: 30px; height: 500px; position: relative;">
-		
-			<img src="imgs/1.jpg" width="100%;">
-
-			<img src="imgs/2.jpg", id="two_seconds" style="display: none; position: absolute;  
-				top: 10px;
-			    right: 5px;
-			    width: 20%;">
-
-			<img src="imgs/3.jpg", id="four_seconds" style="display: none; position: absolute;  
-				top: 30%;
-			    right: 35%;
-			    width: 20%;">
-
-			<img src="imgs/4.jpg", id="six" style="display: none; position: absolute;  
-				top: 55%;
-			    right: 8%;
-			    width: 20%;">
-
-
-			<img src="imgs/5.jpg", id="eight" style="display: none; position: absolute;  
-				top: 20%;
-			    right: 5%;
-			    width: 20%;">
-
-
-			<img src="imgs/6.jpg", id="ten" style="display: none; position: absolute;  
-				top: 2%;
-			    right: 32%;
-			    width: 15%;">
-
-		</column>
-
-	
-	</row>
-	<!--  position: absolute; --> 
-	 <script>
-     setTimeout(function(){
-     	  const demoId = document.querySelector('#two_seconds');
-     	  demoId.style.display='inline'
-         }, 2000)
-
-     setTimeout(function(){
-     	  const demoId = document.querySelector('#four_seconds');
-     	  demoId.style.display='inline'
-         }, 4000)
-
-     setTimeout(function(){
-     	  const demoId = document.querySelector('#four_seconds');
-     	  demoId.style.display='inline'
-         }, 4000)
-
-     setTimeout(function(){
-     	  const demoId = document.querySelector('#six');
-     	  demoId.style.display='inline'
-         }, 6000)
-
-     setTimeout(function(){
-     	  const demoId = document.querySelector('#eight');
-     	  demoId.style.display='inline'
-         }, 8000)
-
-     setTimeout(function(){
-     	  const demoId = document.querySelector('#ten');
-     	  demoId.style.display='inline'
-         }, 10000)
-
-	 </script>
-
-	</body>
-
+    <script src="script.js"></script>
+</body>
 </html>
