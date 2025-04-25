@@ -1,64 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky You Studios</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section with Logo -->
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LYS</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+    <header class="header">
         <div class="logo">
-            <img src="imgs/logo.png">
+            <img src="imgs/logo.png" class="logo-icon">
         </div>
     </header>
 
-    <div class="container" style="padding-left: 150px; padding-right: 150px;">
-        <!-- Left Div: Business Description -->
-        <div class="left">
-            <h2 style="margin: 0px;">Lucky You Studios is a creative culinary studio and event production agency</h2>
-            <p> We curate one of a kind dining experiences to share</p>
-            <p>Based in Berlin, we take on projects across Europe and the world.</p>
+    <div class="grid-container">
+        <div class="grid-item text-item">
+        <h2> Lucky You Studios is a creative culinary studio and event production agency </h2>
+
+        <p style="padding-top: 20px;"> We curate one of a kind dining experiences. From the very large to the very small we love creating memorable experiences through food. 
+        <br>
+        <br>
+        We are based in Berlin, and accept projects across Europe and all over the world.</p>
+        </div>
+        
+        <!-- First image grid -->
+        <div class="grid-item image-item">
+                <img src="imgs/7-2.jpg" class="carousel-image active">
+                <img src="imgs/8-2.jpg" class="carousel-image">
+                <img src="imgs/9-2.jpg" class="carousel-image">
+                <img src="imgs/10-2.jpg" class="carousel-image">
+                <img src="imgs/11-2.jpg" class="carousel-image">        
         </div>
 
-        <!-- Right Div: Image Carousel -->
-        <div class="right">
-            <div class="carousel">
-                <div class="carousel-images">
-                    <img src="imgs/7-2.jpg" class="carousel-image active">
-                    <img src="imgs/8-2.jpg" class="carousel-image">
-                    <img src="imgs/9-2.jpg" class="carousel-image">
-                    <img src="imgs/10-2.jpg" class="carousel-image">
-                    <img src="imgs/11-2.jpg" class="carousel-image">
-                </div>
-            </div>
+<!--         <div class="grid-item image-item">
+            <img src="imgs/team.jpg" alt="Image 1">
         </div>
+
+        <div class="grid-item text-item">
+            Text 2
+        </div>  -->
+
     </div>
 
-    <div class="container" style="padding-left: 150px; padding-right: 150px;">
-        <!-- Left Div: Image Carousel  -->
-        <div class="left">
-            <img src="imgs/team.jpg" style="width: 100%;
-    height: auto;">
-        </div>
-
-        <!-- Right Div: About us Description -->
-        <div class="right" style="text-align: left;">
-            <h2 style="margin: 0px;">Lucky You has always been about our community</h2>
-            <p>Started in 2019 by Evan Hamilton, Chris Paxton and Ruhi Amin as a supper club in a tiny Neukölln apartment, our studio has expanded to include a wide range of chefs, producers, artists and designers. We draw upon our broad network of collaborators to create one of a kind dining experiences.</p>
-
-            <br>
-
-            <p>Our past clients proudly include Sezane, Yun Eyewear, Bar Sway, Google Pixel, Schering Stiftung, On Running, Clarks, Gant, Resident Advisor, The Berlin Club Commission, Highsnobiety and many more. </p>
-
-            <br>
-            <p> 
-            Interested in working together and joining our community? <a href="mailto:hello@luckyyoustudios.com">Email us</a> anytime. 
-        </div>
-    </div>
-
-
+    </body>
+    <footer style="padding: 5%; text-align: center;">
+        Interested in working together and joining our community? <br><a href="mailto:hello@luckyyoustudios.com">Email us</a> anytime or find us on <a href="www.instagram.com/luckyyoustudios.com"> instagram </a> 
+    </footer>
     <script src="script.js"></script>
-</body>
+
+
 </html>
